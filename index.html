@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AIの学校〜昇龍〜 | 未経験から始めるAI活用オンラインスクール</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -20,6 +22,10 @@
             background-image: radial-gradient(circle at 1px 1px, #374151 1px, transparent 0);
             background-size: 20px 20px;
         }
+        .tab-btn.active {
+            background-color: #4f46e5;
+            color: #ffffff;
+        }
     </style>
 </head>
 <body class="bg-gray-900 text-white">
@@ -30,16 +36,21 @@
             <h1 class="text-2xl font-bold">
                 <a href="#">🐲AIの学校〜昇龍〜🐉</a>
             </h1>
-            <a href="#cta" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#features" class="hover:text-indigo-400 transition">学べること</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition">受講生の声</a>
+                <a href="#faq" class="hover:text-indigo-400 transition">よくある質問</a>
+            </nav>
+            <a href="#cta2" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
                 無料相談はこちら
             </a>
         </div>
     </header>
 
-    <!-- Hero Section -->
     <main>
-        <section class="hero-bg py-20 sm:py-32">
-            <div class="container mx-auto px-6 text-center">
+        <!-- Hero Section -->
+        <section class="hero-bg py-20 sm:py-32 relative text-center overflow-hidden">
+            <div class="relative container mx-auto px-6 text-center">
                 <span class="bg-indigo-500/20 text-indigo-400 text-sm font-semibold px-3 py-1 rounded-full">未経験からAIのプロフェッショナルへ</span>
                 <h2 class="text-4xl md:text-6xl font-extrabold mt-4 leading-tight">
                     AIで<span class="gradient-text">未来の仕事</span>を創造する<br>次世代スキルを、その手に。
@@ -64,7 +75,8 @@
         <section class="py-20 sm:py-24 bg-gray-900">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
-                    <h3 class="text-4xl font-extrabold">あなたは、<br>こんな悩み</span>、ありませんか？</h3>
+                    <p class="text-4xl mb-2">あなたは、</p>
+                    <h3 class="text-4xl font-extrabold">こんな<span class="text-indigo-400">悩み</span>、ありませんか？</h3>
                     <p class="text-gray-400 mt-2">一つでも当てはまれば、当スクールがあなたの力になります。</p>
                 </div>
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -97,7 +109,7 @@
         </section>
 
         <!-- Urgency Section -->
-        <section class="py-20 sm:py-24 bg-gray-800">
+        <section class="py-20 sm:py-24 bg-gray-900">
             <div class="container mx-auto px-6">
                 <div class="text-center">
                     <h3 class="text-4xl font-extrabold text-gray-200">そのまま放置しておくと…</h3>
@@ -112,7 +124,7 @@
         <section class="py-20 sm:py-24 bg-gray-800">
             <div class="container mx-auto px-6 max-w-4xl">
                 <div class="text-center mb-12">
-                    <h3 class="text-3xl lg:text-4xl font-bold">なぜ、AI活用を最優先に<br>学なければいけないのか？</h3>
+                    <h3 class="text-3xl lg:text-4xl font-bold">なぜ、<span class="gradient-text">AI活用</span>を<br class="sm:hidden">最優先に学なければいけないのか？</h3>
                 </div>
                 <div class="bg-gray-900/50 p-8 rounded-2xl border border-gray-700">
                     <p class="text-lg text-gray-300 leading-relaxed">
@@ -122,44 +134,58 @@
                     </p>
                 </div>
                 <div class="mt-12">
-                    <img src="./ai_market_2030.png" alt="生成AI市場の需要額見通し（世界）のグラフ" class="rounded-xl shadow-2xl w-full max-w-5xl mx-auto">
+                    <img src="./ai_market_2030.png" alt="生成AI市場の需要額見通し（世界）のグラフ" class="rounded-lg shadow-2xl mx-auto">
                 </div>
-            </div>
-        </section>
-
-        <section class="py-20 sm:py-24 bg-gray-800">
-            <div class="container mx-auto px-6 max-w-4xl">
-                <div class="text-center mb-12">
-                    <h3 class="text-3xl lg:text-4xl font-bold">AIは、私たちの生活や仕事を<br>根本から変えようとしています</h3>
-                </div>
-                <div class="bg-gray-900/50 p-8 rounded-2xl border border-gray-700">
-                    <p class="text-lg text-gray-400 leading-relaxed">
+                <div class="mt-16 text-center">
+                    <h3 class="text-3xl lg:text-4xl font-bold text-gray-200">AIは、私たちの生活や仕事を<br>根本から変えようとしています</h3>
+                    <p class="text-lg text-gray-400 leading-relaxed mt-6 max-w-3xl mx-auto">
                         今後、<span class="font-bold text-white bg-[linear-gradient(transparent_60%,#facc15_60%)]">AIはさらに高度化し、人間の能力を超える領域が拡大</span>していくでしょう。
                         <br><br>
-                        これは単なる技術革新ではなく、<br><span class="font-bold text-red-500 text-2xl">社会の構造を変革する力を持っています。</span>
+                        これは単なる技術革新ではなく、<br><span class="font-bold text-red-500 text-3xl">社会の構造を変革する力を持っています。</span>
                     </p>
+                    <div class="mt-12 overflow-x-auto">
+                        <div class="bg-gray-800 p-6 rounded-2xl border border-gray-700 inline-block min-w-full">
+                            <table class="min-w-full divide-y divide-gray-600">
+                                <thead class="bg-gray-700/50">
+                                    <tr>
+                                        <th scope="col" class="px-6 py-4 text-center text-xs font-semibold text-gray-300 uppercase tracking-wider w-3/8">比較項目</th>
+                                        <th scope="col" class="px-6 py-4 text-center text-xs font-semibold text-green-300 uppercase tracking-wider w-3/8">⭕️ AI活用できる人</th>
+                                        <th scope="col" class="px-6 py-4 text-center text-xs font-semibold text-red-300 uppercase tracking-wider w-3/8">❌ AI活用できない人</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="bg-gray-800 divide-y divide-gray-700">
+                                    <tr><td class="px-6 py-4 whitespace-nowrap font-semibold text-indigo-300">学習速度</td><td class="px-6 py-4 whitespace-nowrap font-semibold">超高速</td><td class="px-6 py-4 whitespace-nowrap font-semibold">自力で時間がかかる</td></tr>
+                                    <tr><td class="px-6 py-4 whitespace-nowrap font-semibold text-indigo-300">問題解決</td><td class="px-6 py-4 whitespace-nowrap font-semibold">サクッと検索＆実行</td><td class="px-6 py-4 whitespace-nowrap font-semibold">経験頼りで遅い</td></tr>
+                                    <tr><td class="px-6 py-4 whitespace-nowrap font-semibold text-indigo-300">情報処理</td><td class="px-6 py-4 whitespace-nowrap font-semibold">圧倒的に早い</td><td class="px-6 py-4 whitespace-nowrap font-semibold">手間と時間がかかる</td></tr>
+                                    <tr><td class="px-6 py-4 whitespace-nowrap font-semibold text-indigo-300">アイデア</td><td class="px-6 py-4 whitespace-nowrap font-semibold">掛け算で無限大</td><td class="px-6 py-4 whitespace-nowrap font-semibold">自分一人で考える</td></tr>
+                                    <tr><td class="px-6 py-4 whitespace-nowrap font-semibold text-indigo-300">成果物</td><td class="px-6 py-4 whitespace-nowrap font-semibold">短時間で高品質</td><td class="px-6 py-4 whitespace-nowrap font-semibold">自力で時間がかかる</td></tr>
+                                    <tr><td class="px-6 py-4 whitespace-nowrap font-semibold text-indigo-300">評価</td><td class="px-6 py-4 whitespace-nowrap font-semibold">「この人に任せたい！」</td><td class="px-6 py-4 whitespace-nowrap font-semibold">「いてもいなくても⋯」</td></tr>
+                                    <tr><td class="px-6 py-4 whitespace-nowrap font-semibold text-indigo-300">仕事の立場</td><td class="px-6 py-4 whitespace-nowrap font-semibold">企画や戦略（上流工程）</td><td class="px-6 py-4 whitespace-nowrap font-semibold">作業要員（下流工程）</td></tr>
+                                    <tr><td class="px-6 py-4 whitespace-nowrap font-semibold text-indigo-300">キャリア</td><td class="px-6 py-4 whitespace-nowrap font-semibold">柔軟にチャレンジできる</td><td class="px-6 py-4 whitespace-nowrap font-semibold">現状維持が精一杯</td></tr>
+                                    <tr><td class="px-6 py-4 whitespace-nowrap font-semibold text-indigo-300">競争力</td><td class="px-6 py-4 whitespace-nowrap font-semibold">差別化で市場価値「高」</td><td class="px-6 py-4 whitespace-nowrap font-semibold">他者との差別化が難しい</td></tr>
+                                    <tr><td class="px-6 py-4 whitespace-nowrap font-semibold text-indigo-300">支援力</td><td class="px-6 py-4 whitespace-nowrap font-semibold">教える立場として活躍</td><td class="px-6 py-4 whitespace-nowrap font-semibold">自分のことで手一杯</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-                <div class="mt-12">
-                    <img src="A_graphic_illustrating_social_division_due_to_AI_d-1761042711644.jpg" alt="AI活用できる人とできない人の格差を示す図" class="rounded-xl shadow-2xl w-full max-w-5xl mx-auto">
-                </div>
-            </div>
-        </section>
-
-        <section class="py-20 sm:py-24 bg-gray-800">
-            <div class="container mx-auto px-6 max-w-4xl">
-                <div class="text-center mb-12">
-                    <h3 class="text-3xl lg:text-4xl font-bold">AI活用が<br class="sm:hidden">「<span class="text-red-500">当たり前</span>」のスキルへ</h3>
-                </div>
-                <div class="bg-gray-900/50 p-8 rounded-2xl border border-gray-700">
+                <div class="mt-20 text-center">
+                    <h3 class="text-3xl lg:text-4xl font-bold text-gray-200">AI活用が<br class="sm:hidden">「<span class="text-red-500">当たり前</span>」のスキルへ</h3>
                     <p class="text-lg text-gray-400 leading-relaxed">
                         AI活用のスキルを持つか持たないかで、個人のキャリアや企業の存続が左右される時代がすぐそこまで来ています。
                         <br><br>
-                        <span class="font-bold text-red-500 text-2xl">けっして、他人事にしないでください。</span>
+                        <span class="font-bold text-red-500 text-3xl">けっして、他人事にしないでください。</span>
                         <br><br>
                         今こそ、AIリテラシーを高め、この革新的な技術を味方につける時です。AI活用のスキルを身につけることは、未来を切り開くための必須条件となっているのです。
                     </p>
                 </div>
-                <div class="text-center text-7xl font-extrabold pt-12 animate-bounce">
+            </div>
+        </section>
+
+        <!-- Transition to CTA -->
+        <section class="py-20 sm:py-24 bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                 <div class="text-center text-7xl font-extrabold pt-12 animate-bounce">
                     🔻🔻🔻
                 </div>
                 <div class="text-center pb-8">
@@ -290,7 +316,7 @@
         </section>
         
         <!-- Solution / What you can learn -->
-        <section class="py-20 sm:py-24 bg-gray-800/50">
+        <section id="features" class="py-20 sm:py-24 bg-gray-800/50">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
                     <h3 class="text-3xl lg:text-4xl font-bold">
@@ -340,101 +366,52 @@
         </section>
 
         <!-- Benefits Section -->
-        <section class="py-20 sm:py-24 bg-gray-800/50">
+        <section class="py-20 sm:py-24 bg-gray-900">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
                     <h3 class="text-3xl lg:text-4xl font-bold">
                         AIを活用することで<br>あなたが得られる<span class="gradient-text">メリット</span>
                     </h3>
                 </div>
-                <div class="text-center mb-16">
-                    <h4 class="text-4xl font-bold mt-8 text-cyan-300">-- 会社員の場合 --</h4>
-                </div>
-                <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
-                    <!-- Benefit 1 -->
-                    <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
-                        <span class="text-4xl">⏰</span>
-                        <h4 class="text-2xl font-bold my-3">業務効率化</h4>
-                        <p class="text-gray-400">仕事が早く終わり、残業が減少。ワークライフバランスが改善されます。</p>
+                <!-- Tabs -->
+                <div class="max-w-3xl mx-auto mb-8">
+                    <div class="flex justify-center rounded-lg bg-gray-800 p-1">
+                        <button class="tab-btn active w-1/3 py-2 px-4 rounded-md font-semibold transition" onclick="changeTab(event, 'employee')">会社員の場合</button>
+                        <button class="tab-btn w-1/3 py-2 px-4 rounded-md font-semibold transition" onclick="changeTab(event, 'freelancer')">フリーランスの場合</button>
+                        <button class="tab-btn w-1/3 py-2 px-4 rounded-md font-semibold transition" onclick="changeTab(event, 'manager')">経営者の場合</button>
                     </div>
-                    <!-- Benefit 2 -->
-                    <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
-                        <span class="text-4xl">💰</span>
-                        <h4 class="text-2xl font-bold my-3">昇給・昇進のチャンス</h4>
-                        <p class="text-gray-400">昇進や昇給の機会が増え、キャリアアップにつながります。</p>
+                </div
+                <!-- Tab Content -->
+                <div id="benefits-content" class="max-w-5xl mx-auto">
+                    <!-- Employee -->
+                    <div id="employee" class="tab-content grid md:grid-cols-2 gap-8">
+                        <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700"><span class="text-4xl">⏰</span><h4 class="text-xl font-bold mt-4 mb-2">圧倒的な時間創出</h4><p class="text-gray-400">単純作業や資料作成をAIに任せ、創造的な仕事に集中する時間を確保できます。</p></div>
+                        <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700"><span class="text-4xl">📈</span><h4 class="text-xl font-bold mt-4 mb-2">評価と収入の向上</h4><p class="text-gray-400">高い生産性と成果で社内評価が向上し、昇進や収入アップに直結します。</p></div>
+                        <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700"><span class="text-4xl">✨</span><h4 class="text-xl font-bold mt-4 mb-2">市場価値の高い人材へ</h4><p class="text-gray-400">AIスキルは希少価値が高く、転職市場で引く手あまたの存在になれます。</p></div>
+                        <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700"><span class="text-4xl">🧘</span><h4 class="text-xl font-bold mt-4 mb-2">ストレスフリーな働き方</h4><p class="text-gray-400">面倒な業務から解放され、心に余裕が生まれ、仕事が楽しくなります。</p></div>
                     </div>
-                    <!-- Benefit 3 -->
-                    <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
-                        <span class="text-4xl">✨</span>
-                        <h4 class="text-2xl font-bold my-3">差別化と特別扱い</h4>
-                        <p class="text-gray-400">特別なプロジェクトや重要な役割を任される可能性が高まります。</p>
+                    <!-- Freelancer -->
+                    <div id="freelancer" class="tab-content hidden grid md:grid-cols-2 gap-8">
+                        <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700"><span class="text-4xl">🚀</span><h4 class="text-xl font-bold mt-4 mb-2">提案力・受注率UP</h4><p class="text-gray-400">AIを活用した高精度な分析や資料で、クライアントに響く提案が可能になります。</p></div>
+                        <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700"><span class="text-4xl">💰</span><h4 class="text-xl font-bold mt-4 mb-2">高単価案件の獲得</h4><p class="text-gray-400">AIコンサルなど、付加価値の高いサービスを提供でき、報酬単価が向上します。</p></div>
+                        <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700"><span class="text-4xl">🌐</span><h4 class="text-xl font-bold mt-4 mb-2">時間と場所の自由</h4><p class="text-gray-400">圧倒的な効率化により、働く時間を短縮し、理想のライフスタイルを実現できます。</p></div>
+                        <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700"><span class="text-4xl">🤝</span><h4 class="text-xl font-bold mt-4 mb-2">信頼と実績の構築</h4><p class="text-gray-400">高品質な納品を継続することで、クライアントからの信頼が厚くなり、継続案件につながります。</p></div>
                     </div>
-                    <!-- Benefit 4 -->
-                    <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
-                        <span class="text-4xl">🚀</span>
-                        <h4 class="text-2xl font-bold my-3">プロとしての評価向上</h4>
-                        <p class="text-gray-400">業界内外での認知度が上がり、将来的なキャリアの幅が広がります。</p>
-                    </div>
-                </div>
-                <div class="text-center mb-16">
-                    <h4 class="text-4xl font-bold mt-8 text-cyan-300">-- フリーランスの場合 --</h4>
-                </div>
-                <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
-                    <!-- Benefit 1 -->
-                    <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
-                        <span class="text-4xl">💰</span>
-                        <h4 class="text-2xl font-bold my-3">業務効率化</h4>
-                        <p class="text-gray-400">より多くのプロジェクトを受注でき、収入が増加します。</p>
-                    </div>
-                    <!-- Benefit 2 -->
-                    <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
-                        <span class="text-4xl">✨</span>
-                        <h4 class="text-2xl font-bold my-3">差別化と特別扱い</h4>
-                        <p class="text-gray-400">独自スキルにより、高単価の仕事を受注しやすくなります。</p>
-                    </div>
-                    <!-- Benefit 3 -->
-                    <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
-                        <span class="text-4xl">🚀</span>
-                        <h4 class="text-2xl font-bold my-3">プロとしての評価向上</h4>
-                        <p class="text-gray-400">AIスキルが評価され、専門家として高評価を得られます。</p>
-                    </div>
-                    <!-- Benefit 4 -->
-                    <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
-                        <span class="text-4xl">😊</span>
-                        <h4 class="text-2xl font-bold my-3">クライアント満足度の向上</h4>
-                        <p class="text-gray-400">AIを使いこなせる希少な人材となり、市場価値が飛躍的に高まります。AIに仕事を奪われる側から、AIを使いこなす側へ。</p>
+                    <!-- Manager -->
+                    <div id="manager" class="tab-content hidden grid md:grid-cols-2 gap-8">
+                        <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700"><span class="text-4xl">💸</span><h4 class="text-xl font-bold mt-4 mb-2">コスト削減と生産性向上</h4><p class="text-gray-400">業務自動化により人件費を削減し、組織全体の生産性を飛躍的に高めます。</p></div>
+                        <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700"><span class="text-4xl">💡</span><h4 class="text-xl font-bold mt-4 mb-2">データに基づく意思決定</h4><p class="text-gray-400">AIによる市場分析や需要予測で、勘に頼らない的確な経営判断が可能になります。</p></div>
+                        <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700"><span class="text-4xl">🏆</span><h4 class="text-xl font-bold mt-4 mb-2">競合優位性の確立</h4><p class="text-gray-400">AIを活用した新サービス開発や業務革新で、他社を圧倒する競争力を築けます。</p></div>
+                        <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700"><span class="text-4xl">🧑‍🏫</span><h4 class="text-xl font-bold mt-4 mb-2">組織のDX推進</h4><p class="text-gray-400">AIリテラシーの高い組織文化を醸成し、持続的な成長基盤を構築します。</p></div>
                     </div>
                 </div>
-                <div class="text-center mb-16">
-                    <h4 class="text-4xl font-bold mt-8 text-cyan-300">-- 経営者の場合 --</h4>
-                </div>
-                <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
-                    <!-- Benefit 1 -->
-                    <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
-                        <span class="text-4xl">🏢⤴️</span>
-                        <h4 class="text-2xl font-bold my-3">新規人材雇用の競争力向上</h4>
-                        <p class="text-gray-400">最新の技術を取り入れる事により、新卒採用の競争力が向上します。</p>
-                    </div>
-                    <!-- Benefit 2 -->
-                    <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
-                        <span class="text-4xl">🧠</span>
-                        <h4 class="text-2xl font-bold my-3">知識の継承と標準化</h4>
-                        <p class="text-gray-400">企業の知的財産を蓄積・共有ができ、新人が即戦力になります。</p>
-                    </div>
-                    <!-- Benefit 3 -->
-                    <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
-                        <span class="text-4xl">👨👩</span>
-                        <h4 class="text-2xl font-bold my-3">人材不足対策</h4>
-                        <p class="text-gray-400">生成AI活用により、業務の自動&効率化で少ない人員で生産性を維持できます。</p>
-                    </div>
-                    <!-- Benefit 4 -->
-                    <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
-                        <span class="text-4xl">💰⤵️</span>
-                        <h4 class="text-2xl font-bold my-3">コスト削減</h4>
-                        <p class="text-gray-400">「人材育成/教育費」「人件費」「外注費」などのコスト削減により利益アップします。</p>
-                    </div>
-                </div>
-                <div class="text-center text-7xl font-extrabold pt-12 animate-bounce">
+            </div>
+        </section>
+
+        <!-- Transition to CTA -->
+        <section class="py-20 sm:py-24 bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                 <div class="text-center text-7xl font-extrabold pt-12 animate-bounce">
                     🔻🔻🔻
                 </div>
                 <div class="text-center pb-8">
@@ -464,14 +441,14 @@
         </section>
 
         <!-- Instructor Section -->
-        <section class="py-20 sm:py-24 bg-gray-800/50">
+        <section class="py-20 sm:py-24 bg-gray-900">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
                     <h3 class="text-3xl font-bold">講師紹介</h3>
                     <p class="text-gray-400 mt-2">AI活用の第一線で活躍するプロフェッショナルが、あなたを成功に導きます！</p>
                 </div>
                 <div class="max-w-2xl mx-auto bg-gray-800 p-8 rounded-2xl border border-gray-700 flex flex-col md:flex-row items-center gap-8">
-                    <img src="https://placehold.co/200x200/6366f1/ffffff?text=RYU&font=inter" alt="講師 シゲッティ" class="w-48 h-48 rounded-full border-4 border-indigo-500 object-cover flex-shrink-0">
+                    <img src="./img_2267.jpg" alt="講師 シゲッティ" class="w-48 h-48 rounded-full border-4 border-indigo-500 object-cover flex-shrink-0">
                     <div class="text-center md:text-left">
                         <p class="text-sm text-indigo-400 font-semibold">AI人材育成協会 代表<br>AIの学校〜昇龍〜 校長</p>
                         <h4 class="text-2xl font-bold mt-1">シゲッティ</h4>
@@ -484,7 +461,7 @@
         </section>
 
         <!-- Operating Company Section -->
-        <section class="py-20 sm:py-24 bg-gray-900">
+        <section class="py-20 sm:py-24 bg-gray-800/50">
             <div class="container mx-auto px-6 max-w-3xl">
                 <div class="text-center mb-12">
                     <h3 class="text-3xl font-bold">運営会社</h3>
@@ -511,10 +488,10 @@
         </section>
 
         <!-- Testimonials Section -->
-        <section class="py-20 sm:py-24 bg-gray-900">
+        <section id="testimonials" class="py-20 sm:py-24 bg-gray-900">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
-                    <h3 class="text-3xl font-bold">受講生の声</h3>
+                    <h3 class="text-3xl lg:text-4xl font-bold">受講生の<span class="gradient-text">喜びの声</span></h3>
                     <p class="text-gray-400 mt-2">未経験から始めた多くの方が、人生を大きく変えています。</p>
                 </div>
                 <div class="grid lg:grid-cols-3 gap-8">
@@ -559,10 +536,10 @@
         </section>
 
         <!-- FAQ Section -->
-        <section class="py-20 sm:py-24 bg-gray-900">
-            <div class="container mx-auto px-6 max-w-3xl">
+        <section id="faq" class="py-20 sm:py-24 bg-gray-800/50">
+            <div class="container mx-auto px-6 max-w-4xl">
                 <div class="text-center mb-12">
-                    <h3 class="text-3xl font-bold">よくある質問</h3>
+                    <h3 class="text-3xl lg:text-4xl font-bold">よくある質問</h3>
                 </div>
                 <div class="space-y-4">
                     <!-- FAQ Item 1 -->
@@ -620,7 +597,7 @@
         </section>
 
         <!-- CTA Section -->
-        <section id="cta" class="py-20 sm:py-24 bg-gray-800/50">
+        <section id="cta2" class="py-20 sm:py-24 bg-gray-800/50">
             <div class="container mx-auto px-6">
                 <div class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl p-10 md:p-16 text-center">
                     <h3 class="text-3xl md:text-4xl font-bold">AI時代を生き抜く準備はできましたか？</h3>
@@ -640,11 +617,30 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 border-t border-gray-700">
+    <footer class="bg-gray-900 text-center py-8">
         <div class="container mx-auto px-6 py-8 text-center text-gray-400">
             <p>&copy; 2025 AIの学校〜昇龍〜. All Rights Reserved.</p>
         </div>
     </footer>
 
+    <script>
+        function changeTab(event, tabId) {
+            // Hide all tab content
+            document.querySelectorAll('.tab-content').forEach(function(tabContent) {
+                tabContent.classList.add('hidden');
+            });
+
+            // Deactivate all tab buttons
+            document.querySelectorAll('.tab-btn').forEach(function(tabBtn) {
+                tabBtn.classList.remove('active');
+            });
+
+            // Show the selected tab content
+            document.getElementById(tabId).classList.remove('hidden');
+
+            // Activate the selected tab button
+            event.currentTarget.classList.add('active');
+        }
+    </script>
 </body>
 </html>
